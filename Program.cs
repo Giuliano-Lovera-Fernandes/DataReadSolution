@@ -115,7 +115,7 @@ app.MapGet("/", async (FilterProductUseCase filterProductUseCase) =>
     double mediaMensal = diasComFaturamento.Average(produto => produto.Valor);
     int diasAcimaDaMedia = diasComFaturamento.Count(produto => produto.Valor > mediaMensal);
 
-    // Questão 04
+    // Questão 03 e 04
     var faturamentoPorEstado = new Dictionary<string, double>
     {
         { "SP", 67836.43 },
