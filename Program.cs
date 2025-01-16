@@ -104,6 +104,8 @@ app.MapGet("/", async (FilterProductUseCase filterProductUseCase) =>
         right--;
     }
 
+    Console.WriteLine(chars.ToString());
+
     var diasComFaturamento = produtosFiltrados
         .Where(produto => produto.Valor > 0) // Ignora dias com faturamento 0
         .ToList();
