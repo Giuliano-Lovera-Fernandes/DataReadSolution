@@ -15,7 +15,7 @@ namespace DataRead.Infrastructure.Services
         public List<Product> FilterProductsPerValue(double valorMinimo)
         {
             var produtos = _productDataService.ObterProdutos();
-            return produtos.Where(p => p.Valor >= valorMinimo).ToList();
+            return produtos.Where(p => p.Valor > valorMinimo).ToList();
         }
     }
 }
